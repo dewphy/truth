@@ -45,9 +45,9 @@ public final class EmployeeSubject extends Subject {
 
   private final Employee actual;
 
-  private EmployeeSubject(FailureMetadata failureMetadata, @NullableDecl Employee subject) {
-    super(failureMetadata, subject);
-    this.actual = subject;
+  private EmployeeSubject(FailureMetadata failureMetadata, @NullableDecl Employee actual) {
+    super(failureMetadata, actual);
+    this.actual = actual;
   }
 
   // User-defined test assertion SPI below this point
